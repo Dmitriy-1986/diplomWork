@@ -8,6 +8,11 @@
     <title>Document</title>
 </head>
 <body>
+<h2>От:    <?=h($_SESSION['user']['name']);?> </h2>
+<p>E-mail: <?=h($_SESSION['user']['email']);?>,</p>
+<p>Адресс: <?=h($_SESSION['user']['address']);?>.</p>
+<hr>
+<h3>Оформлен заказ на:</h3>
 <table style="border: 1px solid #ddd; border-collapse: collapse; width: 100%;">
     <thead>
     <tr style="background: #f9f9f9;">
