@@ -8,9 +8,12 @@
     <title>Document</title>
 </head>
 <body>
-<h2>От:    <?=h($_SESSION['user']['name']);?> </h2>
-<p>E-mail: <?=h($_SESSION['user']['email']);?>,</p>
-<p>Адресс: <?=h($_SESSION['user']['address']);?>.</p>
+<?php
+$user = R::findLast('user');
+?>
+<h2>От:    <?php echo $user->name; ?> </h2>
+<p>E-mail: <?php echo $user->email; ?>,</p>
+<p>Адресс: <?php echo $user->address; ?>.</p>
 <p>Сообщение:  
 <?php
      $last = R::findLast('order');
