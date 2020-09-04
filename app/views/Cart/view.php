@@ -56,7 +56,7 @@
                         <div class="col-md-6 account-left">
                             <form method="post" action="cart/checkout" role="form" data-toggle="validator">
                                 <?php if(!isset($_SESSION['user'])): ?>
-                                    <div class="form-group has-feedback">
+                                <!--  <div class="form-group has-feedback">
                                         <label for="login">Login</label>
                                         <input type="text" name="login" class="form-control" id="login" placeholder="Login" value="<?= isset($_SESSION['form_data']['login']) ? $_SESSION['form_data']['login'] : '' ?>" required>
                                         <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
@@ -81,14 +81,22 @@
                                         <label for="address">Address</label>
                                         <input type="text" name="address" class="form-control" id="address" placeholder="Address" value="<?= isset($_SESSION['form_data']['address']) ? $_SESSION['form_data']['address'] : '' ?>" required>
                                         <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
-                                    </div>
+                                    </div>--> <p style="color:red;">Зарегистрируйтесь или войдите в аккаунт пользователя</p>
                                 <?php endif; ?>
+                                <!--<div class="form-group">
+                                    <label for="address">Note</label>
+                                    <textarea name="note" class="form-control"></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-default">Оформить</button>
+                            </form>-->
+                            <?php if(isset($_SESSION['user'])): ?>
                                 <div class="form-group">
                                     <label for="address">Note</label>
                                     <textarea name="note" class="form-control"></textarea>
                                 </div>
                                 <button type="submit" class="btn btn-default">Оформить</button>
                             </form>
+                            <?php endif; ?>
                             <?php if(isset($_SESSION['form_data'])) unset($_SESSION['form_data']); ?>
                         </div>
                     <?php else: ?>
