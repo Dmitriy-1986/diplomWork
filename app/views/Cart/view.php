@@ -81,7 +81,11 @@
                                         <label for="address">Address</label>
                                         <input type="text" name="address" class="form-control" id="address" placeholder="Address" value="<?= isset($_SESSION['form_data']['address']) ? $_SESSION['form_data']['address'] : '' ?>" required>
                                         <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
-                                    </div>--> <p style="color:red;">Зарегистрируйтесь или войдите в аккаунт пользователя</p>
+                                    </div>--> 
+                                    <div class="alert alert-danger" role="alert">
+                                        Зарегистрируйтесь или войдите в аккаунт пользователя: 
+                                        <a href="user/login"> Вход </a> | <a href="user/signup"> Регистрация </a>
+                                    </div>
                                 <?php endif; ?>
                                 <!--<div class="form-group">
                                     <label for="address">Note</label>
