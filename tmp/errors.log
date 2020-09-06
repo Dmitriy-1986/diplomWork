@@ -1,4 +1,1 @@
-[2020-08-30 22:49:31] Текст ошибки: Connection could not be established with host smtp.ukr.net [php_network_getaddresses: getaddrinfo failed: ���� ���� ����������.  #0] | Файл: E:\OSPanel\domains\ishop2.loc\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Transport\StreamBuffer.php | Строка: 268
-=================
-[2020-08-30 22:49:31] Текст ошибки: Страница не найдена | Файл: E:\OSPanel\domains\ishop2.loc\vendor\ishop\core\Router.php | Строка: 39
-=================
+
